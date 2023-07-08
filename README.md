@@ -8,3 +8,20 @@ READ Y ## IT IS READING THE DIGIT FROM USER INPUT
 (( SUM=x+y )) ## This is the mathematical formula to add 2 numbers
 ECHO "THE RESULT OF ADDITION=$SUM" ##IT IS GENERATING THE ADDITION OF THE 2 NUMBERS
 ![image](https://github.com/SAJJADALI6713/testfiles/assets/138733114/688c4fcc-05a0-4e98-992e-0a417e3fdba3)
+
+**AUTHENTICATOR.SH**
+
+#!/bin/bash
+
+echo "Enter username" ##ASKING THE USER TO ENTER HIS USERNAME TO AUTHENTICATE
+read username ##READING THE USERNAME
+echo "Enter password" ##ASKING THE USER TO PUT THE PASSWORD TO AUTHENTICATE
+read password ## READING THE PASSWORD
+
+if [[ ( $username == "admin" && $password == "secret" ) ]]; then ##CONDITION IS IF THE USERNAME AND PASSWORD MATHES IT WILL SAY VALID USER ELSE IT WILL SAY INVALID USER 
+echo "valid user"
+else
+echo "invalid user"
+fi
+![image](https://github.com/SAJJADALI6713/testfiles/assets/138733114/f761a2ec-a064-46b6-904b-dac3fc4b4d9e)
+
